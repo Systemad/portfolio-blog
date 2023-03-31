@@ -2,7 +2,7 @@ baseURl: https://systemad.github.io/portfolio-blog/
 languageCode: en-us
 title: Danova
 paginate: 5
-theme: hugo-PaperMod
+theme: papermod
 
 enableRobotsTXT: true
 buildDrafts: false
