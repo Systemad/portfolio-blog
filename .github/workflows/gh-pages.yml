@@ -39,6 +39,6 @@ jobs:
         with:
           personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           #github_token: ${{ secrets.GITHUB_TOKEN }}
-          #external_repository: Systemad/systemad.github.io
+          external_repository: Systemad/systemad.github.io
           publish_branch: master
           publish_dir: ./public
