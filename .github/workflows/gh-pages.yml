@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - master  # Set a branch to deploy
+      - main  # Set a branch to deploy
 
 jobs:
   deploy:
@@ -35,10 +35,10 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           #github_token: ${{ secrets.GITHUB_TOKEN }}
           external_repository: Systemad/systemad.github.io
-          publish_branch: master
+          publish_branch: main
           publish_dir: ./public
