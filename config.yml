@@ -1,6 +1,6 @@
 baseURl: https://blog.danova.me/
 languageCode: en-us
-title: Danova
+title: Danova's blog
 paginate: 5
 theme: PaperMod
 
@@ -9,7 +9,6 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 pygmentsUseClasses: true
-
 
 minify:
   disableXML: true
@@ -24,7 +23,8 @@ outputs:
         - JSON # is necessary
 
 params:
-    title: Danova
+    env: production
+    title: Danova's blog
     defaultTheme: auto
     keywords: [Portfolio, Blog]
     author: me
@@ -45,7 +45,6 @@ params:
     assets:
         disableHLJS: true
 
-
     profileMode:
         enabled: false
         title: "Danova" # optional default will be site title
@@ -55,9 +54,8 @@ params:
         # imageWidth: 120 # custom size
         # imageHeight: 120 # custom size
 
+        # TODO: ADD DANOVA.ME WEBSITE
         buttons:
-            - name: Archive
-              url: "/archive"
             - name: Github
               url: "https://github.com/"
 
@@ -70,25 +68,16 @@ params:
         Content: >
             Welcome to my website!
             
-            - I am a .NET developer!
-            
-            -
-
             - Below is a personal blog of mine, where I will post
             guides, tutorial and code snippets that I believe are relevant and will help others.
-            It will mostly be around .NET but also other things such as React.
-            
-            -
 
-            - Be sure to check out my portfolio and projects as well! 
-
-            
+            - It will mostly be around .NET!
+            - Be sure to check out my [**portfolio!**](https://www.danova.me/)
 
     cover:
         hidden: true # hide everywhere but not in structured data
         hiddenInList: true # hide on list pages and home
         hiddenInSingle: true # hide on single page
-
 
     fuseOpts:
         isCaseSensitive: false
@@ -101,6 +90,10 @@ params:
 
 menu:
   main:
+    - identifier: Archives
+      name: archives
+      url: /archives/
+      weight: 5
     - identifier: categories
       name: categories
       url: /categories/
@@ -115,7 +108,7 @@ menu:
       weight: 30
     - identifier: projects
       name: Portfolio
-      url: https://danova.me
+      url: https://www.danova.me/
       weight: 40
 
 markup:
