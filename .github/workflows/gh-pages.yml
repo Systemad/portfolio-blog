@@ -42,3 +42,4 @@ jobs:
           external_repository: Systemad/systemad.github.io
           publish_branch: main
           publish_dir: ./public
+          cname: blog.danova.me
